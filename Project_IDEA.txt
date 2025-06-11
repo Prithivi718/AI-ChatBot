@@ -1,0 +1,22 @@
+Main Feature 1: User Activity Monitor
+Main Feature 2: Social & Content Reminder Engine
+
+So I'll now want to clarify how we are going to this? Like oru use case mathiri explain panna da correct ah iruukum so before this enaku actual ah how we going to do:
+1.Epaddi activity monitoring panna porom?? And how activity montoring that u said some libs 'psutil' & 'pywin32' not only these libs how we going to done that monitoring.  Same like web-activity montoring how we going to perform 
+
+2.And how social content from browser la irunthu eduthu, database la log panradhu like category wise panni podanum. And again if any notifications arised from the user-activities, like from linkedin la irunthu user-connections msg panna atha scrape or LinkedIN api use panni fetch pannitu llm pass panni oru small notify from the llm epadi panna porom? Or even same for Youtube and Instagram apps
+
+My small thinking is:
+  1. System Activity monitoring: I think probably Task Manager la activities show-up agum. So athula irunthu activty monitor pannalam nenaikiren. But it's only for how long a person or user falls or dives into a PC or Mobile phone completely. SO since we doing PC work we can give output like U have used Pycharm this much, "motive msg":don't go and hit ur head on the wall, Relax some time☺. And also like if uses spotify, spotify la irunthu enda songs or podcast user watch panraru pathu, athuku thaguntha mathiri reply panna num.
+
+2. Browser Activity monitoring: The tools u said -> Browser extensions, via API keys or web-scrap. So ithula edhu free ah with no user limitations like credentials for API keys like that should not be used. So ithu actual ah epadi use panna porom thrla, but my thought is-->
+   a. Using the extensions we can monitor the user-activities probably how means URL header la irunthu content edthu DB la category wise store pannanum, how means user watched these videos, shorts from this channel or in case of linkedin na [which is also stored in DB or can retrieve info via API of LinkedIN [clarify this!!] ] if a msg came to user means athu ennanu pathuthu LLM model ku oru context mathiri send pannanum, then Our Assistant notifies user that "from @msgsend_user_name have msg this about { context in the LinkedIn msg} " 
+ 
+Clarify for web activity--> Epadi vandhu User ku Notifications from WA, linkedIN, Insta how we going to done.
+
+--So my final thought process is: --
+So the activity for both system and web is going to be done automatically by the Code Logic we implementing and those activities are logged in seperate databases for youtube, one for linkedin one for system activity manager And also code logic for Getting Notify by monitoring itself. 
+--AI thinking--
+And here only our AI model or Assistant read those DB and analyse it and sends feed to user, like u keep rushed with Code, relax or take rest. where even if user gets some notifications from linkedIN or subscription msgs from Youtube from a channel which is logged in DB that content is passed as an extract to LLM and assistant responds to user.  Clarify this-> how notifications is going to been managed, I think mostly from DB itself and also by monitoring it via Youtube API key and LinkedIN API Key.
+
+NOW clearly explain pannu
